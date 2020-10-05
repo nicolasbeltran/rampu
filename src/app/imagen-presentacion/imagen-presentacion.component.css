@@ -1,0 +1,18 @@
+.txt {
+  text-align: center;
+  color: white;
+  position: absolute;
+
+  font-weight: bold;
+  line-height: 60px;
+  margin: 0px 55px 0px;
+}
+.c-imagen {
+  align-items: center;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+p {
+  margin: -2px 0px -2px;
+}

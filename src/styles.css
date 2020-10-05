@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@media (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+}
+.bg-page {
+  background-color: #f0c14d;
+}
+* {
+  font-family: Arial;
+}

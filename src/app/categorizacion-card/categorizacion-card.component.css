@@ -1,0 +1,44 @@
+* {
+  background-color: #f0c14d;
+}
+.card {
+  margin: 0px 2%;
+}
+.card2 {
+  border: 2px solid black;
+}
+.encabezado {
+  background-color: black;
+  color: #f0c14d;
+  font-weight: 600;
+  font-size: 2.3rem;
+  width: 100%;
+}
+p {
+  margin: 4% 5%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+img {
+  width: 75px;
+  border-radius: 100px;
+  margin: 2% 2% 2% 5%;
+  height: 75px;
+}
+.modalidades {
+  text-align: center;
+
+  font-size: 31px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+.description {
+  margin: 2% 0px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.icono {
+  margin-right: 4px;
+}

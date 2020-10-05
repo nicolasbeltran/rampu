@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card2">
+    <div class="encabezado">
+      <img src="{{ modality.icon }}" alt="" />
+      {{ modality.titleCard }}
+    </div>
+    <p>{{ modality.description }}</p>
+  </div>
+  <div class="modalidades">MODALIDADES</div>
+  <div class="description">
+    <div *ngFor="let mdesc of modality.modalityDescription">
+      <i class="icono fas fa-check"></i>{{ mdesc }}
+    </div>
+  </div>
+</div>

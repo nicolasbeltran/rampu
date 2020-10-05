@@ -1,0 +1,10 @@
+.borde-izquierdo {
+  border-left: 1px solid white;
+  font-weight: bold;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.edicion-titulo {
+  align-content: center;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+<div class="py-5 container-fluid">
+  <div class="categoizacion-card">
+    <div class="mb-5">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="chat">
+          ¿Que necesito para<br />
+          categorizar mi institucion?
+        </div>
+      </div>
+      <div class="d-flex flex-row-reverse bd-highlight">
+        <div class="chat2">
+          El conocimiento preciso<br />
+          del Marco Regulatorio
+          <i class="icon fas fa-check-double"></i>
+        </div>
+      </div>
+    </div>
+    <categorizacion-card
+      [modality]="modality"
+      *ngFor="let modality of modalities"
+    ></categorizacion-card>
+  </div>
+</div>

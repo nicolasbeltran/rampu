@@ -1,0 +1,9 @@
+<div class="servicio container">
+  <div class="text-center estilo-letra">NUESTROS SERVICIOS</div>
+  <div class="d-flex justify-content-between w-100 flex-wrap">
+    <card-servicios
+      *ngFor="let servicio of servicios"
+      [servicio]="servicio"
+    ></card-servicios>
+  </div>
+</div>

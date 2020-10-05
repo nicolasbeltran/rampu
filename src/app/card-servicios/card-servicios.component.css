@@ -1,0 +1,19 @@
+.card {
+  width: 210px;
+  height: 360px;
+  text-align: center;
+  border: solid 5px #f0c14d;
+  border-radius: 12px;
+  box-shadow: 0px 0px 11px -3px black;
+}
+img {
+  width: 60%;
+  margin: 0 auto;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.card-text {
+  color: grey;
+}
