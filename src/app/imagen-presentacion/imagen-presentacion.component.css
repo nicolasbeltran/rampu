@@ -2,10 +2,11 @@
   text-align: center;
   color: white;
   position: absolute;
-
+  width: 87%;
+  font-size: 5vw;
   font-weight: bold;
-  line-height: 60px;
-  margin: 0px 55px 0px;
+  line-height: 5vw;
+  margin: 0px 6%;
 }
 .c-imagen {
   align-items: center;

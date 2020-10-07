@@ -5,26 +5,33 @@
   margin: 0px 8%;
 }
 .chat {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   width: 60%;
-  padding: 20px 40px;
+  padding: 2% 2%;
   font-family: "Josefin Sans";
   line-height: 30px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px black;
 }
-.chat2 {
-  font-size: 2.2rem;
-  width: 60%;
-  padding: 20px 40px;
-  font-family: "Josefin Sans";
-  line-height: 30px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px black;
-}
+
 .icon {
   background-color: white;
   color: #f0c14d;
+}
+
+@media (max-width: 960px) {
+  h2 {
+    font-size: 80%;
+  }
+}
+@media (max-width: 720px) {
+  h2 {
+    font-size: 80%;
+  }
+}
+@media (max-width: 540px) {
+  h2 {
+    font-size: 80px;
+  }
 }
