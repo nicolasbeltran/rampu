@@ -1,12 +1,11 @@
-* {
-  background-color: #f0c14d;
-}
 .card {
+  background-color: #f0c14d;
   margin: 0px;
-}
-.card2 {
   border: 2px solid black;
 }
+/* .card2 {
+  border: 2px solid black;
+} */
 .encabezado {
   background-color: black;
   color: #f0c14d;

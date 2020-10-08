@@ -2,7 +2,10 @@
   background-color: #f0c14d;
 }
 .categoizacion-card {
-  margin: 0px 8%;
+  /* margin: 0px 8%; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3%;
 }
 .chat {
   font-size: 2.1rem;
