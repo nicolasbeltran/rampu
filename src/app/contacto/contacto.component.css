@@ -22,16 +22,28 @@
   width: 100%;
   height: 120px;
   resize: none;
-  background-color: rgb(102, 102, 102);
+  background-color: rgb(163, 163, 163);
   color: black;
+}
+.contacto {
+  letter-spacing: 59px;
+  font-family: Georgia;
+  font-size: 62px;
 }
 input {
   width: 100%;
+  height: 40px;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid white;
+  font-size: 20px;
 }
-
+textarea {
+  font-size: 20px;
+}
+textarea::placeholder {
+  color: black;
+}
 .button {
   background-color: #f0c14d;
   border: none;
@@ -42,4 +54,38 @@ input {
   display: inline-block;
   font-size: 32px;
   /* margin: 4px 2px; */
+}
+@media (max-width: 1070px) {
+  p.contacto {
+    letter-spacing: 50px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 900px) {
+  p.contacto {
+    letter-spacing: 40px;
+  }
+}
+@media (max-width: 700px) {
+  p.contacto {
+    letter-spacing: 26px;
+  }
+}
+@media (max-width: 500px) {
+  p.contacto {
+    letter-spacing: 8px;
+    font-size: 43px;
+  }
+}
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-bottom: 1px solid red;
+}
+input,
+textarea {
+  outline: none;
+}
+button:disabled {
+  opacity: 0.6;
+  background-color: lightgrey;
 }

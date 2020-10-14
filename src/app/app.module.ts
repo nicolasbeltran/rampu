@@ -12,6 +12,7 @@ import { CategorizacionCardComponent } from './categorizacion-card/categorizacio
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactoComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

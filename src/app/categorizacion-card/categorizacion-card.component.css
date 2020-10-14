@@ -18,11 +18,18 @@ p {
   font-size: 1.5rem;
   font-weight: 600;
 }
-img {
-  width: 75px;
+.icono1 {
+  width: 78px;
   border-radius: 100px;
-  margin: 2% 2% 2% 5%;
-  height: 75px;
+  margin: 2% 2% 2% 4%;
+  height: 78px;
+  background-color: #f0c14d;
+  display: inline-block;
+}
+.icono2 {
+  height: 52px;
+  width: 52px;
+  margin: 11px 13px;
 }
 .modalidades {
   margin: 15px 0px;

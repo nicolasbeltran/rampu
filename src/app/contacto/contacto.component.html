@@ -1,6 +1,6 @@
 <div class="py-3">
-  <p class="text-center contacto">CONTACTO</p>
-  <div class="container-fluid">
+  <p class="text-center contacto mx-4">CONTACTO</p>
+  <div class="container-fluid" style="max-width: 1200px">
     <div class="row my-4">
       <div class="col-12 col-md-4 border-right container-fluid">
         <p class="txt">
@@ -27,28 +27,40 @@
         </div>
       </div>
       <div class="col-12 col-md-8">
-        <form class="formulario-style">
+        <form class="formulario-style" [formGroup]="form">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="email" class="" placeholder="Nombre" />
+              <input type="text" class="" placeholder="Nombre" formControlName="name"/>
             </div>
             <div class="form-group col-md-6">
-              <input type="password" class="" placeholder="Telefono" />
+              <input type="text" class="" placeholder="Telefono" formControlName="phone"/>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="f" placeholder="E-Mail" />
+            <input 
+            type="text" class="" placeholder="E-Mail (Obligatorio)" formControlName="email"/>
+            <div *ngIf="form.controls.email.touched && !form.controls.email.valid" class="invalid-feedback d-block">
+              <span *ngIf="form.controls.email.errors.required">E-mail es obligatorio</span>
+              <span *ngIf="form.controls.email.errors.email">E-mail es inválido</span>
+            </div>
           </div>
           <div class="form-group">
-            <input type="text" class="" placeholder="Localidad" />
+            <input type="text" class="" placeholder="Localidad" formControlName="localidad"/>
           </div>
           <div class="form-group">
-            <textarea class="text-tarea" placeholder="Mensaje"></textarea>
+            <textarea 
+            class="text-tarea"  
+            placeholder="Mensaje (Obligatorio)" 
+            formControlName="mensaje"></textarea>
+            <div *ngIf="form.controls.mensaje.touched && !form.controls.mensaje.valid" class="invalid-feedback d-block">
+              <span *ngIf="form.controls.mensaje.errors.required">Mensaje es obligatorio</span>
+            </div>
           </div>
           <div class="text-right">
-            <button type="submit" class="button">Enviar</button>
+            <button type="submit" [disabled]="!form.valid" class="button">Enviar</button>
           </div>
         </form>
+        {{form.value | json}}
       </div>
     </div>
   </div>

@@ -2,12 +2,13 @@
   <!-- <div class="card2"> -->
     <!-- encabezado desktop -->
     <div class="d-none d-md-block encabezado">
-      <img src="{{ modality.icon }}" alt="" />
+      <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
+      
       {{ modality.titleCard }}
     </div>
     <!-- encabezado mobile -->
     <div class="d-block d-md-none encabezado text-center">
-      <img src="{{ modality.icon }}" alt="" />
+     <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div> 
       <p>{{ modality.titleCard }}</p>
     </div>
     <p>{{ modality.description }}</p>
@@ -29,5 +30,5 @@
     <div *ngFor="let mdesc of modality.modalityDescription">
       <i class="icono fas fa-check"></i>{{ mdesc }}
     </div>
-  <!-- </div> -->
+
 </div>

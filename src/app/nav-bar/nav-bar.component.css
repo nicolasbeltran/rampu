@@ -8,3 +8,22 @@
   align-content: center;
   text-align: center;
 }
+.margin-l {
+  margin-left: 22%;
+}
+/* .navbar-collapse {
+  justify-content: flex-end;
+} */
+a {
+  color: white;
+}
+@media (max-width: 992px) {
+  li.borde-izquierdo {
+    border-left: none;
+    text-align: left;
+  }
+  a.my-3 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}

@@ -22,19 +22,3 @@
   background-color: white;
   color: #f0c14d;
 }
-
-@media (max-width: 960px) {
-  h2 {
-    font-size: 80%;
-  }
-}
-@media (max-width: 720px) {
-  h2 {
-    font-size: 80%;
-  }
-}
-@media (max-width: 540px) {
-  h2 {
-    font-size: 80px;
-  }
-}

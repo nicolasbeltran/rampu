@@ -6,4 +6,20 @@
 }
 .servicio {
   padding: 5% 0px;
+  max-width: 1200px;
+}
+@media (max-width: 960px) {
+  div.estilo-letra {
+    letter-spacing: 20px;
+  }
+}
+@media (max-width: 720px) {
+  div.estilo-letra {
+    letter-spacing: 10px;
+  }
+}
+@media (max-width: 540px) {
+  div.estilo-letra {
+    letter-spacing: 0px;
+  }
 }

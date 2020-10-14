@@ -3,9 +3,9 @@
   color: white;
   position: absolute;
   width: 87%;
-  font-size: 5vw;
+  font-size: 4.5rem;
   font-weight: bold;
-  line-height: 5vw;
+  line-height: 70px;
   margin: 0px 6%;
 }
 .c-imagen {
@@ -16,4 +16,50 @@
 }
 p {
   margin: -2px 0px -2px;
+}
+
+@media (max-width: 1468px) {
+  p.txt {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  p.txt {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 960px) {
+  p.txt {
+    font-size: 40px;
+  }
+}
+@media (max-width: 820px) {
+  p.txt {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 720px) {
+  p.txt {
+    font-size: 27px;
+  }
+}
+@media (max-width: 575px) {
+  p.txt {
+    font-size: 42px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 530px) {
+  p.txt {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 395px) {
+  p.txt {
+    font-size: 29px;
+    line-height: 40px;
+  }
 }
