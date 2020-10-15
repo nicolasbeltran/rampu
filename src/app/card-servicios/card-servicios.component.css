@@ -1,5 +1,5 @@
 .card {
-  width: 210px;
+  width: 250px;
   height: 93%;
   min-height: 236px;
   text-align: center;
@@ -14,10 +14,11 @@ img {
   margin: 0 auto;
 }
 .card-title {
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 800;
+  font-size: 1rem;
 }
 .card-text {
   font-size: 1.1rem;
-  color: rgb(95, 95, 95);
+  color: rgb(126, 126, 126);
+  font-weight: 600;
 }
