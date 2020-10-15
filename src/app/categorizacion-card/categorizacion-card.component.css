@@ -41,10 +41,13 @@ p {
 }
 .description {
   margin: 2% 0px;
-  font-size: larger;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 .icono {
   margin-right: 4px;
+}
+.txt-description {
+  font-size: 2rem;
 }

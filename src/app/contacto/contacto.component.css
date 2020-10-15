@@ -65,6 +65,9 @@ textarea::placeholder {
   p.contacto {
     letter-spacing: 40px;
   }
+  .mail {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 700px) {
   p.contacto {
