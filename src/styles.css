@@ -1,5 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~ngx-toastr/toastr';
 @import "~bootstrap/dist/css/bootstrap.css";
+/* @import '~ngx-toastr/toastr-bs4-alert'; */
+
+.toast-container {
+  opacity: 0.9;
+}
+
+.toast-container .ngx-toastr {
+  border: none;
+}
+
+.toast-container .toast-error {
+  background-color: #c82333;
+}
+
+.toast-container .toast-success {
+  background-color: green;
+}
+
+.toast-container .toast-warning {
+  background-color: #ffc107;
+}
 
 /* @media (max-width: 600px) {
   html {

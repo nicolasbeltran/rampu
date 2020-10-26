@@ -14,7 +14,7 @@
             style="width: 19%"
             class="mx-auto d-block"
           />
-          <p class="text-center mail">consulatas@ranpu.com.ar</p>
+          <p class="text-center mail">consultas@ranpu.com.ar</p>
         </div>
         <div class="container">
           <img
@@ -57,7 +57,7 @@
             </div>
           </div>
           <div class="text-right">
-            <button type="submit" [disabled]="!form.valid" class="button">Enviar</button>
+            <button (click)="sendEmail()" type="submit" [disabled]="!form.valid" class="button">Enviar</button>
           </div>
         </form>
       </div>
