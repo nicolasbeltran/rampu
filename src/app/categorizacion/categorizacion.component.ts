@@ -24,14 +24,14 @@ export class CategorizacionComponent implements OnInit {
         'Centro de rehabilitación para personas con dicapasidad visual',
         'Hogar',
       ],
-      icon: '../../assets/05.png',
+      icon: './assets/05.png',
     },
     {
       titleCard: 'RESOLUCIÓN 47/2001 REHABILITACIÓN',
       description:
         'Somos expertos en el instrumento de evaluación NECESARIO para la categorización de establecimientos de rehabilitación.',
       modalityDescription: ['Centros, Clínicas, Sanatorios, institutos'],
-      icon: '../../assets/06.png',
+      icon: './assets/06.png',
     },
   ];
   ngOnInit(): void {}

@@ -9,7 +9,7 @@
         </p>
         <div class="container mt-3">
           <img
-            src="../../assets/08.png"
+            src="./assets/08.png"
             alt=""
             style="width: 19%"
             class="mx-auto d-block"
@@ -18,7 +18,7 @@
         </div>
         <div class="container">
           <img
-            src="../../assets/09.png"
+            src="./assets/09.png"
             alt=""
             style="width: 19%"
             class="mx-auto d-block"
@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="form-group">
-            <input 
+            <input
             type="text" class="" placeholder="E-Mail (Obligatorio)" formControlName="email"/>
             <div *ngIf="form.controls.email.touched && !form.controls.email.valid" class="invalid-feedback d-block">
               <span *ngIf="form.controls.email.errors.required">E-mail es obligatorio</span>
@@ -48,9 +48,9 @@
             <input type="text" class="" placeholder="Localidad" formControlName="localidad"/>
           </div>
           <div class="form-group">
-            <textarea 
-            class="text-tarea"  
-            placeholder="Mensaje (Obligatorio)" 
+            <textarea
+            class="text-tarea"
+            placeholder="Mensaje (Obligatorio)"
             formControlName="mensaje"></textarea>
             <div *ngIf="form.controls.mensaje.touched && !form.controls.mensaje.valid" class="invalid-feedback d-block">
               <span *ngIf="form.controls.mensaje.errors.required">Mensaje es obligatorio</span>
