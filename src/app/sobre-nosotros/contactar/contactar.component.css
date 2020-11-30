@@ -1,0 +1,39 @@
+.card-contacto {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+* {
+  background-color: white;
+  font-family: "Josefin Sans";
+}
+.txt {
+  font-size: 3rem;
+  border-right: solid 3px;
+  margin: 34px 0px;
+}
+.btn {
+  width: 413px;
+  height: 105px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  background-color: black;
+  color: white;
+}
+button:hover {
+  border: solid 8px rgb(225, 225, 225);
+  transition-duration: 0.3s;
+}
+@media (max-width: 992px) {
+  .btn {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .txt {
+    border-right: none;
+  }
+  .btn {
+    width: 265px;
+  }
+}

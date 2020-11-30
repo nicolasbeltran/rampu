@@ -1,0 +1,67 @@
+* {
+  font-family: "Josefin Sans";
+}
+.card-equipo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.txt {
+  font-size: 1.7rem;
+  max-width: 450px;
+}
+.tittle-dos {
+  font-size: 3.3rem;
+  padding-top: 30px;
+}
+.tittle-uno {
+  font-size: 4.6rem;
+  padding: 80px 0px 60px;
+}
+.pa-bo {
+  padding-bottom: 6rem;
+}
+@media (max-width: 992px) {
+  img {
+    width: 350px;
+    height: 350px;
+  }
+  .txt {
+    font-size: 1.6rem;
+  }
+  .tittle-dos {
+    font-size: 3.2rem;
+  }
+  .tittle-uno {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 850px) {
+  img {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 768px) {
+  img {
+    width: 322px;
+    height: 322px;
+  }
+}
+@media (max-width: 767px) {
+  img {
+    width: 390px;
+    height: 390px;
+  }
+  .tittle-uno {
+    font-size: 4.3rem;
+  }
+}
+@media (max-width: 576px) {
+  img {
+    width: 272px;
+    height: 272px;
+  }
+  .tittle-uno {
+    font-size: 3.7rem;
+  }
+}

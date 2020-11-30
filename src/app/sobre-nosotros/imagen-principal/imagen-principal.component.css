@@ -1,0 +1,118 @@
+* {
+  font-family: "Josefin Sans";
+}
+.txt {
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 62%;
+  font-size: 2.3rem;
+  line-height: 32px;
+  margin: 0px 19%;
+}
+.title {
+  margin-bottom: 30px;
+  font-size: 4.3rem;
+}
+
+.c-imagen {
+  align-items: center;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+p {
+  margin: -2px 0px -2px;
+}
+
+@media (max-width: 1536px) {
+  .txt {
+    font-size: 34px;
+  }
+  .title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1416px) {
+  .txt {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 58px;
+  }
+}
+@media (max-width: 1249px) {
+  .txt {
+    font-size: 26px;
+  }
+  .title {
+    font-size: 50px;
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 1083px) {
+  .txt {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 47px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 916px) {
+  .txt {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .title {
+    font-size: 41px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 833px) {
+  .txt {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 666px) {
+  .txt {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .title {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .txt {
+    font-size: 27px;
+    line-height: 25px;
+    margin: 0px 11%;
+    width: 79%;
+  }
+  .title {
+    font-size: 39px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 339px) {
+  .txt {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0px 11%;
+    width: 79%;
+  }
+  .title {
+    font-size: 37px;
+    margin-bottom: 25px;
+  }
+}
+.sombra {
+  box-shadow: 0px 0px 100px;
+}

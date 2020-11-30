@@ -16,7 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ImagenPrincipalComponent } from './sobre-nosotros/imagen-principal/imagen-principal.component';
+import { NuestroEquipoComponent } from './sobre-nosotros/nuestro-equipo/nuestro-equipo.component';
+import { ContactarComponent } from './sobre-nosotros/contactar/contactar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainSobreNosotrosComponent } from './sobre-nosotros/main-sobre-nosotros/main-sobre-nosotros.component';
+// import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -31,6 +36,10 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     NosotrosComponent,
     ContactoComponent,
     FooterComponent,
+    ImagenPrincipalComponent,
+    NuestroEquipoComponent,
+    ContactarComponent,
+    MainSobreNosotrosComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +48,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     ToastrModule.forRoot(),
     NgxSpinnerModule,
     BrowserAnimationsModule,
-    ScrollToModule.forRoot(),
+    AppRoutingModule,
+    // ScrollToModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

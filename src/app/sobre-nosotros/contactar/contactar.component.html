@@ -1,0 +1,14 @@
+<div class="container-fluid mb-md-0 mb-5">
+    <div class="row card-contacto">
+        <div class="col-md-8 col-12 txt text-center">
+            Queremos conocerte para brindarte <br> las soluciones que mejor <br> se adapten a tu proyecto.
+        </div>
+        <div class="col-md-4 col-12 text-center d-flex">
+            <button class="align-self-center ml-auto mr-auto btn" (click)="show=!show" data-toggle="collapse"
+                data-target="#collapseExample">CONTACTAR</button>
+        </div>
+    </div>
+</div>
+<div class="collapse" id="collapseExample">
+    <contacto *ngIf="show"></contacto>
+</div>

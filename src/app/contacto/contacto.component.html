@@ -8,21 +8,11 @@
           <span class="espacio">dentro de las proximas 48hs.</span>
         </p>
         <div class="container mt-3">
-          <img
-            src="./assets/08.png"
-            alt=""
-            style="width: 19%"
-            class="mx-auto d-block"
-          />
+          <img src="./assets/08.png" alt="" style="width: 19%" class="mx-auto d-block" />
           <p class="text-center mail">consultas@ranpu.com.ar</p>
         </div>
         <div class="container">
-          <img
-            src="./assets/09.png"
-            alt=""
-            style="width: 19%"
-            class="mx-auto d-block"
-          />
+          <img src="./assets/09.png" alt="" style="width: 19%" class="mx-auto d-block" />
           <p class="text-center mail">01131421050</p>
         </div>
       </div>
@@ -30,28 +20,24 @@
         <form class="formulario-style" [formGroup]="form">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="text" class="" placeholder="Nombre" formControlName="name"/>
+              <input type="text" class="" placeholder="Nombre" formControlName="name" />
             </div>
             <div class="form-group col-md-6">
-              <input type="text" class="" placeholder="Telefono" formControlName="phone"/>
+              <input type="text" class="" placeholder="Telefono" formControlName="phone" />
             </div>
           </div>
           <div class="form-group">
-            <input
-            type="text" class="" placeholder="E-Mail (Obligatorio)" formControlName="email"/>
+            <input type="text" class="" placeholder="E-Mail (Obligatorio)" formControlName="email" />
             <div *ngIf="form.controls.email.touched && !form.controls.email.valid" class="invalid-feedback d-block">
               <span *ngIf="form.controls.email.errors.required">E-mail es obligatorio</span>
               <span *ngIf="form.controls.email.errors.email">E-mail es inválido</span>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="" placeholder="Localidad" formControlName="localidad"/>
+            <input type="text" class="" placeholder="Localidad" formControlName="localidad" />
           </div>
           <div class="form-group">
-            <textarea
-            class="text-tarea"
-            placeholder="Mensaje (Obligatorio)"
-            formControlName="mensaje"></textarea>
+            <textarea class="text-tarea" placeholder="Mensaje (Obligatorio)" formControlName="mensaje"></textarea>
             <div *ngIf="form.controls.mensaje.touched && !form.controls.mensaje.valid" class="invalid-feedback d-block">
               <span *ngIf="form.controls.mensaje.errors.required">Mensaje es obligatorio</span>
             </div>
