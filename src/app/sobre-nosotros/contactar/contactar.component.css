@@ -7,17 +7,19 @@
   font-family: "Josefin Sans";
 }
 .txt {
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-right: solid 3px;
   margin: 34px 0px;
 }
 .btn {
-  width: 413px;
-  height: 105px;
-  font-size: 2.8rem;
+  width: 371px;
+  height: 80px;
+  font-size: 2.4rem;
   font-weight: 800;
   background-color: black;
   color: white;
+  padding-top: 9px;
+  border: solid 8px black;
 }
 button:hover {
   border: solid 8px rgb(225, 225, 225);

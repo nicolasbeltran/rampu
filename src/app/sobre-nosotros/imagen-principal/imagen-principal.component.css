@@ -71,7 +71,7 @@ p {
 }
 @media (max-width: 833px) {
   .txt {
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 21px;
   }
   .title {
@@ -81,7 +81,7 @@ p {
 }
 @media (max-width: 666px) {
   .txt {
-    font-size: 13px;
+    /* font-size: 13px; */
     line-height: 18px;
   }
   .title {

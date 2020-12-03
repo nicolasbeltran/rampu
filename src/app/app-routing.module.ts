@@ -7,7 +7,8 @@ import { MainSobreNosotrosComponent } from './sobre-nosotros/main-sobre-nosotros
 
 const routes: Routes =[
   { path: '', component: MainComponent },
-  { path: 'sobre-nosotros', component: MainSobreNosotrosComponent }
+  { path: 'sobre-nosotros', component: MainSobreNosotrosComponent },
+  { path: '**', component: MainComponent },
 ]
 
 
@@ -15,7 +16,7 @@ const routes: Routes =[
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes) 
+    RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
 })

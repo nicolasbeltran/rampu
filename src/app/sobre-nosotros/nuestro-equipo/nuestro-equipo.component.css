@@ -48,6 +48,9 @@
   }
 }
 @media (max-width: 767px) {
+  .card-foto{
+    text-align: center;
+  }
   img {
     width: 390px;
     height: 390px;

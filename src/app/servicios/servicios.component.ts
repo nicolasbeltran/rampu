@@ -21,7 +21,7 @@ export class ServiciosComponent implements OnInit {
       {
         title: 'AJUSTE DE PLANTA FISICA EXISTENTE',
         description:
-          'Adecuando lo necesario para arribar a un proyecto avreditable, eficiente y rentable.',
+          'Adecuando lo necesario para arribar a un proyecto acreditable, eficiente y rentable.',
         icon: './assets/02.png',
       },
       {
@@ -33,7 +33,7 @@ export class ServiciosComponent implements OnInit {
       {
         title: 'ESTRATEGIA DE GESTIÓN',
         description:
-          'Desarrolo de una planificación estrategica, gestionandola de manera satisfactoria y ágil.',
+          'Desarrollo de una planificación estratégica, gestionándola de manera satisfactoria y ágil.',
         icon: './assets/04.png',
       },
     ];
