@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+import { DummyApiService } from '../services/dummy-api.service';
 
 @Component({
   selector: 'nav-bar',
@@ -9,7 +10,10 @@ import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scrol
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(private router: Router, private scrollToService: ScrollToService) {
+  usuarios: any;
+  usuarioPerfil: any;
+
+  constructor(private router: Router, private scrollToService: ScrollToService, private dummyApiService: DummyApiService) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         const config: ScrollToConfigOptions = {
@@ -22,6 +26,23 @@ export class NavBarComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
+  clickNuestrosServicios(){
+    this.dummyApiService.getUsers().subscribe(
+      res => {
+        this.usuarios = res.data;
+      }
+    )
+  }
+
+  damePerfilUsuario(user){
+    this.dummyApiService.getUserProfile(user.id).subscribe(
+      res => {
+        this.usuarioPerfil = res;
+      }
+    )
+  }
 
 }
