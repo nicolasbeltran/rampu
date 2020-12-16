@@ -1,11 +1,13 @@
+* {
+  font-family: Gotham;
+}
 .borde-izquierdo {
   border-left: 1px solid white;
-  font-weight: bold;
   line-height: 1;
-  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   width: 170px;
-  height: 78px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .edicion-titulo {
   align-content: center;
@@ -14,9 +16,11 @@
 .margin-l {
   margin-left: 22%;
 }
-/* .navbar-collapse {
-  justify-content: flex-end;
-} */
+.contacto-nav {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
 a {
   color: white;
 }
@@ -24,22 +28,37 @@ a {
 li {
   cursor: pointer;
 }
-@media (max-width: 992px) {
-  li.borde-izquierdo {
+@media (max-width: 991px) {
+  .borde-izquierdo {
     border-left: none;
-    text-align: left;
+    text-align: center;
     width: 190px;
+  }
+  .row {
+    margin-left: 15px;
   }
   a.my-3 {
     margin-top: 1px;
     margin-bottom: 1px;
   }
+  .contacto-nav {
+    padding-bottom: 5px;
+  }
+  .borde-izquierdo {
+    padding-bottom: 4px;
+  }
+  .p-nav {
+    padding-bottom: 16px;
+  }
 }
-li:hover {
-  border-bottom: solid 7px white;
+div.nav-item:hover {
+  border-bottom: solid 15px white;
   transition-property: all;
   transition-duration: 0.3s;
 }
 nav {
   z-index: 10;
+}
+.row {
+  margin-right: 15px;
 }

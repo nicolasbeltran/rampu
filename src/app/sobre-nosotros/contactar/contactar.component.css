@@ -4,26 +4,28 @@
 }
 * {
   background-color: white;
-  font-family: "Josefin Sans";
 }
 .txt {
   font-size: 2.5rem;
   border-right: solid 3px;
   margin: 34px 0px;
+  font-family: Caviar Dreams;
 }
 .btn {
   width: 371px;
-  height: 80px;
+  height: 87px;
   font-size: 2.4rem;
   font-weight: 800;
-  background-color: black;
+  font-family: Gotham;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(64, 50, 17, 1) 92%
+  );
   color: white;
   padding-top: 9px;
-  border: solid 8px black;
-}
-button:hover {
   border: solid 8px rgb(225, 225, 225);
-  transition-duration: 0.3s;
 }
 @media (max-width: 992px) {
   .btn {

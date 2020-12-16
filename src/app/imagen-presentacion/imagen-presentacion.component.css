@@ -1,10 +1,13 @@
+* {
+  font-family: Gotham;
+}
+
 .txt {
   text-align: center;
   color: white;
   position: absolute;
   width: 87%;
   font-size: 4rem;
-  font-weight: bold;
   line-height: 70px;
   margin: 0px 6%;
 }

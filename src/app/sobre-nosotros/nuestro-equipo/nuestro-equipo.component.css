@@ -1,13 +1,14 @@
 * {
-  font-family: "Josefin Sans";
+  font-family: Caviar Dreams;
 }
 .card-equipo {
   max-width: 1200px;
   margin: 0 auto;
 }
 .txt {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   max-width: 450px;
+  line-height: 1.3;
 }
 .tittle-dos {
   font-size: 3.3rem;
@@ -20,6 +21,11 @@
 .pa-bo {
   padding-bottom: 6rem;
 }
+@media (max-width: 1038px) {
+  .tittle-dos {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 992px) {
   img {
     width: 350px;
@@ -28,11 +34,13 @@
   .txt {
     font-size: 1.6rem;
   }
-  .tittle-dos {
-    font-size: 3.2rem;
-  }
   .tittle-uno {
     font-size: 4.5rem;
+  }
+}
+@media (max-width: 879px) {
+  .tittle-dos {
+    font-size: 2.7rem;
   }
 }
 @media (max-width: 850px) {
@@ -48,7 +56,7 @@
   }
 }
 @media (max-width: 767px) {
-  .card-foto{
+  .card-foto {
     text-align: center;
   }
   img {

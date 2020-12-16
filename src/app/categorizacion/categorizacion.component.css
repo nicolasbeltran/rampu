@@ -3,9 +3,14 @@
 }
 .categoizacion-card {
   /* margin: 0px 8%; */
-  max-width: 1200px;
+  max-width: 1225px;
   margin: 0 auto;
-  padding: 3%;
+  padding-top: 3%;
+}
+
+img {
+  max-width: 80%;
+  display: block;
 }
 .chat {
   font-size: 2.1rem;

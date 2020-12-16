@@ -1,13 +1,19 @@
-<div class="card">
+<div class="padding-card">
+  <div class="card">
     <!-- encabezado desktop -->
-    <div class="d-none d-md-block encabezado">
+    <div class="d-none d-md-block" 
+    [ngClass]="{'encabezado1': modality.titleCard === 'MARCO BÁSICO LEY 24901',
+    'encabezado2': modality.titleCard === 'RESOLUCIÓN 47/2001 REHABILITACIÓN'  
+  }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
-      
+
       {{ modality.titleCard }}
     </div>
     <!-- encabezado mobile -->
-    <div class="d-block d-md-none encabezado text-center">
-     <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div> 
+    <div class="d-block d-md-none text-center" [ngClass]="{'encabezado1': modality.titleCard === 'MARCO BÁSICO LEY 24901',
+    'encabezado2': modality.titleCard === 'RESOLUCIÓN 47/2001 REHABILITACIÓN'  
+  }">
+      <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
       <p>{{ modality.titleCard }}</p>
     </div>
     <p>{{ modality.description }}</p>
@@ -29,5 +35,5 @@
     <div *ngFor="let mdesc of modality.modalityDescription">
       <i class="icono fas fa-check"></i>{{ mdesc }}
     </div>
-
+  </div>
 </div>

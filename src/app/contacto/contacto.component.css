@@ -1,42 +1,66 @@
 * {
   background: #212121;
   color: white;
-  font-family: "Josefin Sans";
 }
-
+.card-contacto {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 27px;
+}
 .txt {
-  margin: 0px 10% 0px 13%;
-  font-size: 25px;
-  font-family: "Josefin Sans";
+  font-size: 1.9rem;
+  font-family: Caviar Dreams;
+  line-height: 1;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  width: 94%;
 }
 .espacio {
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 .mail {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-family: Caviar Dreams;
 }
 .formulario-style {
   margin: 0px 0px 0px 0px;
+  max-width: 86%;
+  margin: 0 auto;
+  padding-top: 21px;
+  height: 536px;
 }
 .text-tarea {
   width: 100%;
-  height: 120px;
+  height: 193px;
   resize: none;
   background-color: rgb(163, 163, 163);
   color: black;
+  font-size: 1.9rem;
 }
 .contacto {
   letter-spacing: 59px;
-  font-family: Georgia;
+  font-family: Made Saonara;
   font-size: 62px;
+  margin-bottom: 3rem;
+}
+.contacto-consulta {
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+.borde {
+  border-right: 2px solid #f8f8f8;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 input {
   width: 100%;
-  height: 40px;
+  height: 46px;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid white;
-  font-size: 20px;
+  font-size: 1.7rem;
 }
 textarea {
   font-size: 20px;
@@ -52,8 +76,7 @@ textarea::placeholder {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 32px;
-  /* margin: 4px 2px; */
+  font-size: 2rem;
 }
 @media (max-width: 1070px) {
   p.contacto {
@@ -69,6 +92,14 @@ textarea::placeholder {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 768px) {
+  p.txt {
+    text-align: center;
+  }
+  .borde {
+    border-right: none;
+  }
+}
 @media (max-width: 700px) {
   p.contacto {
     letter-spacing: 26px;
@@ -76,7 +107,7 @@ textarea::placeholder {
 }
 @media (max-width: 500px) {
   p.contacto {
-    letter-spacing: 8px;
+    letter-spacing: 16px;
     font-size: 43px;
   }
 }

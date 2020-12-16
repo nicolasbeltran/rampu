@@ -1,21 +1,22 @@
+* {
+  font-family: Gotham;
+}
 .card {
   background-color: #f0c14d;
   margin: 0px;
   border: 2px solid black;
 }
-/* .card2 {
-  border: 2px solid black;
-} */
-.encabezado {
+.encabezado2 {
   background-color: black;
   color: #f0c14d;
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
   width: 100%;
 }
 p {
-  margin: 4% 5%;
-  font-size: 1.5rem;
+  margin: 6% 6%;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .icono1 {
@@ -40,14 +41,82 @@ p {
   padding-bottom: 2px;
 }
 .description {
-  margin: 2% 0px;
+  margin: 3% 0px 2%;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
 .icono {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 .txt-description {
   font-size: 2rem;
+}
+.padding-card {
+  padding: 4%;
+}
+.encabezado1 {
+  background-color: black;
+  color: #f0c14d;
+  font-weight: 600;
+  font-size: 2.7rem;
+  letter-spacing: 13px;
+  width: 100%;
+}
+@media (max-width: 1211px) {
+  .encabezado2 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+  }
+  .encabezado1 {
+    font-size: 2.5rem;
+    letter-spacing: 9px;
+  }
+}
+@media (max-width: 1052px) {
+  .encabezado1 {
+    font-size: 2.4rem;
+    letter-spacing: 7px;
+  }
+}
+@media (max-width: 1105px) {
+  .encabezado2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 915px) {
+  .encabezado1 {
+    font-size: 2.3rem;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 873px) {
+  .encabezado2 {
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+  }
+  .encabezado1 {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .icono1 {
+    margin: 5% 2% -1% 4%;
+  }
+  .encabezado1 {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+  }
+  .encabezado2 {
+    font-size: 1.9rem;
+    letter-spacing: 0px;
+  }
 }
