@@ -60,7 +60,7 @@ p {
   color: #f0c14d;
   font-weight: 600;
   font-size: 2.7rem;
-  letter-spacing: 13px;
+  letter-spacing: 11px;
   width: 100%;
 }
 @media (max-width: 1211px) {
@@ -69,14 +69,14 @@ p {
     letter-spacing: 2px;
   }
   .encabezado1 {
-    font-size: 2.5rem;
-    letter-spacing: 9px;
+    font-size: 2.4rem;
+    letter-spacing: 8px;
   }
 }
 @media (max-width: 1052px) {
   .encabezado1 {
-    font-size: 2.4rem;
-    letter-spacing: 7px;
+    font-size: 2.3rem;
+    letter-spacing: 6px;
   }
 }
 @media (max-width: 1105px) {
@@ -101,7 +101,7 @@ p {
   }
   .encabezado1 {
     font-size: 2.2rem;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
   }
   p {
     font-size: 1.6rem;

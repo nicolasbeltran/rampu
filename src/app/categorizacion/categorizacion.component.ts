@@ -10,7 +10,7 @@ export class CategorizacionComponent implements OnInit {
   constructor() {}
   modalities: Modality[] = [
     {
-      titleCard: 'MARCO BÁSICO LEY 24901',
+      titleCard: 'MARCO BÁSICO "LEY 24901"',
       description:
         'Somos expertos en el instrumento de evaluacion NECESARIO para CATEGORIZAR y ACREDITAR los servicios de atención a las personas con discapacidad y a los efectos de su incorporación al Registro Nacional de Prestadores de Servicios de Atención de Personas con Discapacidad',
       modalityDescription: [
@@ -25,6 +25,7 @@ export class CategorizacionComponent implements OnInit {
         'Hogar',
       ],
       icon: './assets/05.png',
+      id: 1
     },
     {
       titleCard: 'RESOLUCIÓN 47/2001 REHABILITACIÓN',
@@ -32,6 +33,7 @@ export class CategorizacionComponent implements OnInit {
         'Somos expertos en el instrumento de evaluación NECESARIO para la categorización de establecimientos de rehabilitación.',
       modalityDescription: ['Centros, Clínicas, Sanatorios, Institutos'],
       icon: './assets/06.png',
+      id: 2 
     },
   ];
   ngOnInit(): void {}

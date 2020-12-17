@@ -3,4 +3,5 @@ export class Modality {
   description: string;
   icon: string;
   modalityDescription: any;
+  id: number
 }

@@ -2,16 +2,16 @@
   <div class="card">
     <!-- encabezado desktop -->
     <div class="d-none d-md-block" 
-    [ngClass]="{'encabezado1': modality.titleCard === 'MARCO BÁSICO LEY 24901',
-    'encabezado2': modality.titleCard === 'RESOLUCIÓN 47/2001 REHABILITACIÓN'  
+    [ngClass]="{'encabezado1': modality.id === 1,
+    'encabezado2': modality.id === 2  
   }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
 
       {{ modality.titleCard }}
     </div>
     <!-- encabezado mobile -->
-    <div class="d-block d-md-none text-center" [ngClass]="{'encabezado1': modality.titleCard === 'MARCO BÁSICO LEY 24901',
-    'encabezado2': modality.titleCard === 'RESOLUCIÓN 47/2001 REHABILITACIÓN'  
+    <div class="d-block d-md-none text-center" [ngClass]="{'encabezado1': modality.id === 1,
+    'encabezado2': modality.id === 2  
   }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
       <p>{{ modality.titleCard }}</p>

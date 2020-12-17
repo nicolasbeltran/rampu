@@ -22,7 +22,7 @@ import { ContactarComponent } from './sobre-nosotros/contactar/contactar.compone
 import { AppRoutingModule } from './app-routing.module';
 import { MainSobreNosotrosComponent } from './sobre-nosotros/main-sobre-nosotros/main-sobre-nosotros.component';
 // import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-// import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 @NgModule({
   declarations: [

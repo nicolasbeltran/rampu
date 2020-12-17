@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 // import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+// import { DummyApiService } from '../services/dummy-api.service'; CAMBIO
 
 @Component({
   selector: 'nav-bar',
@@ -22,6 +23,7 @@ export class NavBarComponent implements OnInit {
   //   });
   // }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
 }
