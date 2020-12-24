@@ -33,7 +33,8 @@ p {
   margin: 11px 13px;
 }
 .modalidades {
-  margin: 15px 0px;
+  margin-top: 60px !important;
+  margin-bottom: 15px;
   text-align: center;
   font-size: 31px;
   font-weight: 600;
@@ -53,7 +54,7 @@ p {
   font-size: 2rem;
 }
 .padding-card {
-  padding: 4%;
+  padding: 2% 4%;
 }
 .encabezado1 {
   background-color: black;

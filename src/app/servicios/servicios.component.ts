@@ -19,13 +19,13 @@ export class ServiciosComponent implements OnInit {
         icon: './assets/01.png',
       },
       {
-        title: 'AJUSTE DE PLANTA FISICA EXISTENTE',
+        title: 'AJUSTE DE PLANTA FÍSICA EXISTENTE',
         description:
           'Adecuando lo necesario para arribar a un proyecto acreditable, eficiente y rentable.',
         icon: './assets/02.png',
       },
       {
-        title: 'OPTIMIZACIÓN DE LA PLANTA FISICA',
+        title: 'OPTIMIZACIÓN DE LA PLANTA FÍSICA',
         description:
           'Para categorizar, recategorizar y/o ampliar la capacidad edilicia existente que se traducirá en mayor rentabilidad.',
         icon: './assets/03.png',
