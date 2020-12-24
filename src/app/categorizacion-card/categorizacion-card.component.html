@@ -1,9 +1,9 @@
 <div class="padding-card">
   <div class="card">
     <!-- encabezado desktop -->
-    <div class="d-none d-md-block" 
+    <div class="d-none d-md-block"
     [ngClass]="{'encabezado1': modality.id === 1,
-    'encabezado2': modality.id === 2  
+    'encabezado2': modality.id === 2
   }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
 
@@ -11,7 +11,7 @@
     </div>
     <!-- encabezado mobile -->
     <div class="d-block d-md-none text-center" [ngClass]="{'encabezado1': modality.id === 1,
-    'encabezado2': modality.id === 2  
+    'encabezado2': modality.id === 2
   }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
       <p>{{ modality.titleCard }}</p>
@@ -33,7 +33,8 @@
   </h2>
   <div class="description">
     <div *ngFor="let mdesc of modality.modalityDescription">
-      <i class="icono fas fa-check"></i>{{ mdesc }}
+      <img class="icono" src="./../../assets/icon-check.png" alt="">{{ mdesc }}
+      <!-- <i class="icono fas fa-check"></i> -->
     </div>
   </div>
 </div>

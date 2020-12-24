@@ -49,6 +49,8 @@ p {
 
 .icono {
   margin-right: 8px;
+  width: 20px;
+  padding-bottom: 4px;
 }
 .txt-description {
   font-size: 2rem;
