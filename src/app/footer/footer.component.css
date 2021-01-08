@@ -12,3 +12,35 @@
 .logo {
   margin: 0 2.5% 0px 1%;
 }
+.phone {
+  margin-left: 1px;
+}
+@media (max-width: 575px) {
+  .txt {
+    width: 90%;
+    margin-top: 14px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 478px) {
+  .txt {
+    font-size: 18px;
+  }
+  img {
+    width: 18%;
+  }
+  .phone {
+    width: 13%;
+  }
+}
+@media (max-width: 370px) {
+  .txt {
+    font-size: 14px;
+  }
+  img {
+    width: 20%;
+  }
+  .phone {
+    width: 15%;
+  }
+}

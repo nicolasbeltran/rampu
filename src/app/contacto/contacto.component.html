@@ -4,8 +4,8 @@
       <p class="text-center contacto">CONTACTO</p>
     </div>
     <div class="container-fluid">
-      <div class="row my-4">
-        <div class="col-12 col-md-4 borde ">
+      <div class="row mb-4 mt-md-4 mt-0">
+        <div class="col-12 col-md-4 borde d-none d-md-block">
           <div class="contacto-consulta">
             <p class="txt d-none d-xl-block">
               Envianos tu consulta <br> y te contactaremos<br> <span class="espacio">dentro de las</span> <br> <span class="espacio">próximas 48hs</span>.
@@ -51,10 +51,15 @@
                   <span *ngIf="form.controls.mensaje.errors.required">Mensaje es obligatorio</span>
                 </div>
               </div>
-              <div class="text-right">
+              <div class="text-md-right text-center">
                 <button (click)="sendEmail()" type="submit" [disabled]="!form.valid" class="button">Enviar</button>
               </div>
             </form>
+          </div>
+          <div class="d-block d-md-none">
+            <p class="txt">
+              Envianos tu consulta y te contactaremos<br> <span class="espacio">dentro de las próximas 48hs</span>.
+            </p>
           </div>
         </div>
       </div>

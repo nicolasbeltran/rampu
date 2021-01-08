@@ -19,7 +19,7 @@
 .espacio {
   letter-spacing: 6px;
 }
-.txt.mobile{
+.txt.mobile {
   text-align: left;
 }
 
@@ -40,7 +40,7 @@
   resize: none;
   background-color: rgb(163, 163, 163);
   color: black;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 .contacto {
   letter-spacing: 59px;
@@ -84,36 +84,119 @@ textarea::placeholder {
   font-size: 2rem;
 }
 @media (max-width: 1070px) {
-  p.contacto {
+  .contacto {
     letter-spacing: 50px;
     font-size: 50px;
   }
 }
 @media (max-width: 900px) {
-  p.contacto {
+  .contacto {
     letter-spacing: 40px;
   }
   .mail {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 768px) {
-  p.txt {
+@media (max-width: 767px) {
+  .txt {
     text-align: center;
   }
   .borde {
     border-right: none;
   }
-}
-@media (max-width: 700px) {
-  p.contacto {
-    letter-spacing: 26px;
+  .contacto {
+    margin-bottom: 0px;
+    margin-left: 6%;
+    letter-spacing: 55px;
+    font-size: 4rem;
+  }
+  .button {
+    width: 98%;
+  }
+  .formulario-style {
+    max-width: 90%;
+  }
+  .txt {
+    font-size: 1.9rem;
+    line-height: 34px;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    width: 100%;
   }
 }
-@media (max-width: 500px) {
-  p.contacto {
-    letter-spacing: 16px;
-    font-size: 43px;
+@media (max-width: 700px) {
+  .contacto {
+    letter-spacing: 45px;
+    font-size: 3.5rem;
+  }
+  input {
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .text-tarea {
+    font-size: 1.5rem;
+    height: 200px;
+  }
+  .formulario-style {
+    height: 518px;
+  }
+}
+@media (max-width: 581px) {
+  .contacto {
+    letter-spacing: 39px;
+    font-size: 3rem;
+  }
+  .formulario-style {
+    max-width: 95%;
+  }
+  .txt {
+    font-size: 1.5rem;
+    line-height: 26px;
+  }
+}
+@media (max-width: 510px) {
+  .contacto {
+    letter-spacing: 34px;
+    font-size: 2.5rem;
+  }
+  .txt {
+    font-size: 1.4rem;
+    line-height: 25px;
+  }
+  .espacio {
+    letter-spacing: 4px;
+  }
+}
+@media (max-width: 437px) {
+  .contacto {
+    letter-spacing: 25px;
+    font-size: 2.8rem;
+  }
+  .txt {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+  .espacio {
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 377px) {
+  .contacto {
+    letter-spacing: 25px;
+    font-size: 2.5rem;
+  }
+  .txt {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .espacio {
+    letter-spacing: 2 px;
+  }
+}
+@media (max-width: 358px) {
+  .contacto {
+    letter-spacing: 20px;
+    font-size: 2.5rem;
   }
 }
 input.ng-invalid.ng-touched,

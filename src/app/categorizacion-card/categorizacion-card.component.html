@@ -1,12 +1,10 @@
 <div class="padding-card">
   <div class="card">
     <!-- encabezado desktop -->
-    <div class="d-none d-md-block"
-    [ngClass]="{'encabezado1': modality.id === 1,
+    <div class="d-none d-md-block" [ngClass]="{'encabezado1': modality.id === 1,
     'encabezado2': modality.id === 2
   }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
-
       {{ modality.titleCard }}
     </div>
     <!-- encabezado mobile -->
@@ -14,11 +12,12 @@
     'encabezado2': modality.id === 2
   }">
       <div class=" icono1"><img src="{{ modality.icon }}" class="icono2" alt="" /></div>
-      <p>{{ modality.titleCard }}</p>
+      <p class="encabezadoMobile">{{ modality.titleCardMobile1 }} <br> {{ modality.titleCardMobile2 }}</p>
     </div>
-    <p>{{ modality.description }}</p>
+
+    <p class="description2">{{ modality.description }}</p>
   </div>
-  <h2 class="modalidades d-flex justify-content-between mt-4">
+  <h2 class="modalidades d-flex justify-content-between">
     <span>M</span>
     <span>O</span>
     <span>D</span>

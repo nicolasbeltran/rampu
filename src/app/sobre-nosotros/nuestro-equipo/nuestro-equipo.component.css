@@ -56,23 +56,66 @@
   }
 }
 @media (max-width: 767px) {
-  .card-foto {
-    text-align: center;
-  }
   img {
-    width: 390px;
-    height: 390px;
+    width: 100%;
+    height: 100%;
   }
   .tittle-uno {
     font-size: 4.3rem;
   }
 }
-@media (max-width: 576px) {
-  img {
-    width: 272px;
-    height: 272px;
-  }
+@media (max-width: 575px) {
   .tittle-uno {
-    font-size: 3.7rem;
+    font-size: 3.8rem;
+  }
+  .tittle-dos {
+    font-size: 3.5rem;
+  }
+  .txt {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 538px) {
+  .tittle-uno {
+    font-size: 3.6rem;
+  }
+  .tittle-dos {
+    font-size: 3.3rem;
+  }
+  .txt {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 505px) {
+  .tittle-uno {
+    font-size: 3.3rem;
+  }
+  .tittle-dos {
+    font-size: 2.9rem;
+  }
+  .txt {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 445px) {
+  .tittle-uno {
+    font-size: 3rem;
+  }
+  .tittle-dos {
+    font-size: 2.4rem;
+  }
+  .txt {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 389px) {
+  .tittle-uno {
+    font-size: 2.6rem;
+  }
+  .tittle-dos {
+    font-size: 2rem;
+  }
+  .txt {
+    font-size: 1.1rem;
   }
 }

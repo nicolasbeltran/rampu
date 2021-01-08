@@ -24,3 +24,9 @@
     letter-spacing: 7px;
   }
 }
+@media (max-width: 430px) {
+  div.estilo-letra {
+    letter-spacing: 4px;
+    font-size: 29px;
+  }
+}

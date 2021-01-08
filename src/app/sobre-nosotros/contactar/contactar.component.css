@@ -33,11 +33,39 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .txt {
     border-right: none;
+    margin: 23px 0px 7px;
+    font-size: 3.3rem;
   }
   .btn {
-    width: 265px;
+    width: 81%;
+  }
+}
+@media (max-width: 604px) {
+  .txt {
+    font-size: 3rem;
+  }
+  .btn {
+    width: 81%;
+  }
+}
+@media (max-width: 555px) {
+  .txt {
+    font-size: 2.3rem;
+    line-height: 38px;
+  }
+  .btn {
+    width: 92%;
+  }
+}
+@media (max-width: 439px) {
+  .txt {
+    font-size: 2rem;
+    line-height: 38px;
+  }
+  .btn {
+    width: 82%;
   }
 }

@@ -12,38 +12,82 @@
   line-height: 1.2;
 }
 .estilo-title {
-  /* letter-spacing: 15px; */
   font-family: Made Saonara;
   font-weight: 600;
   font-size: 2.6rem;
-  margin: 0px 8%;
+  margin: 0px 8% 0px 8%;
   border-bottom: 2px solid black;
+  letter-spacing: 30px;
+  padding-bottom: 10px;
 }
 .borde-out {
   border: 4px solid #f0c14d;
 
   border-radius: 15px;
 }
-/* @media screen and (max-width: 960px) {
+@media screen and (max-width: 1199px) {
+  h2.estilo-title {
+    letter-spacing: 22px;
+  }
+}
+@media screen and (max-width: 991px) {
   h2.estilo-title {
     letter-spacing: 11px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   h2.estilo-title {
-    letter-spacing: 6px;
-  }
-} */
-@media screen and (max-width: 543px) {
-  h2.estilo-title {
-    font-size: 2.2rem;
-  }
-  .estilo-txt{
-    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-size: 2rem;
+    padding-bottom: 7px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 575px) {
+  h2.estilo-title {
+    font-size: 1.94rem;
+
+    padding-bottom: 9px;
+  }
+  .estilo-txt {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  h2.estilo-title {
+    padding-bottom: 8px;
+    letter-spacing: 8px;
+  }
+}
+@media screen and (max-width: 486px) {
   h2.estilo-title {
     font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 454px) {
+  h2.estilo-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .estilo-txt {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 415px) {
+  h2.estilo-title {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  }
+  .estilo-txt {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 326px) {
+  h2.estilo-title {
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+  }
+  .estilo-txt {
+    font-size: 1rem;
   }
 }
