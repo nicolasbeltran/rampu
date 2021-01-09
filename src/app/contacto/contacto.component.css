@@ -83,6 +83,9 @@ textarea::placeholder {
   display: inline-block;
   font-size: 2rem;
 }
+.icon{
+  font-size: 4rem;
+}
 @media (max-width: 1070px) {
   .contacto {
     letter-spacing: 50px;
