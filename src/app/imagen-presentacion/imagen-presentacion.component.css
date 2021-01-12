@@ -65,3 +65,13 @@ p {
     font-size: 27px;
   }
 }
+@media (max-width: 350px) {
+  p.txt {
+    font-size: 23px;
+  }
+}
+@media (max-width: 307px) {
+  p.txt {
+    font-size: 19px;
+  }
+}

@@ -23,3 +23,8 @@ img {
   color: rgb(126, 126, 126);
   font-weight: 600;
 }
+@media (max-width: 454px) {
+  img {
+    width: 50%;
+  }
+}

@@ -9,27 +9,39 @@
                     <div>
                         <img src="./../../../assets/Moni.jpg" width="420" height="420" alt="">
                     </div>
-                    <h2 class="tittle-dos">Mónica Sidi</h2>
-                    <div class="txt">
-                        Arquitecta Proyectista, especialista en diseños de Discapacidad y Rehabilitación. <br>
-                        Profesional
-                        Acreditador y auditor de más de 4000 instituciones en todo el país, que conforman el padrón
-                        prestacional de discapacidad y rehabilitación de PAMI. <br> Redactora del área de planta física
-                        del
-                        Marco Básico (Ley 24901). <br> Fue profesional acreditador en la Subgerencia de Discapacidad y
-                        Auditora de Unidad de Auditoria Prestacional de PAMI con más de 20 años de esperencia. <br> Ex
-                        miembro de la Junta evaluadora de Prestadores de Servicios de Atención de Prestadores. <br>
-                        Docente
-                        y formadora de profesionales, responsables en la acreditación de instituciones de Discapacidad
-                        de
-                        todo el país.
+                    <h2 class="tittle-dos">Mónica Sidi
+                        <a class="d-inline d-sm-none" (click)="show=!show" data-toggle="collapse"
+                            data-target="#collapseExample">
+                            <i *ngIf="show" class="fas fa-caret-down"></i>
+                            <i *ngIf="!show" class="fas fa-caret-up"></i>
+                        </a> {{show}}
+                    </h2>
+                    <div class="collapse">
+                        <div class="txt" *ngIf="show">
+                            Arquitecta Proyectista, especialista en diseños de Discapacidad y Rehabilitación. <br>
+                            Profesional
+                            Acreditador y auditor de más de 4000 instituciones en todo el país, que conforman el padrón
+                            prestacional de discapacidad y rehabilitación de PAMI. <br> Redactora del área de planta
+                            física
+                            del
+                            Marco Básico (Ley 24901). <br> Fue profesional acreditador en la Subgerencia de Discapacidad
+                            y
+                            Auditora de Unidad de Auditoria Prestacional de PAMI con más de 20 años de esperencia. <br>
+                            Ex
+                            miembro de la Junta evaluadora de Prestadores de Servicios de Atención de Prestadores. <br>
+                            Docente
+                            y formadora de profesionales, responsables en la acreditación de instituciones de
+                            Discapacidad
+                            de
+                            todo el país.
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-12 card-foto">
                 <div class="mr-auto ml-auto" style="max-width: 464px;">
                     <img src="./../../../assets/Juan.jpg" width="420" height="420" alt="">
-                    <h2 class="tittle-dos">Juan José Di Nuzzo</h2>
+                    <h2 class="tittle-dos">Juan José Di Nuzzo </h2>
                     <div class="txt">
                         Arquitecto Hospitalario, especialista en Recursos físicos en Salud. Consultor, Proyectista. <br>
                         Ex Asesor de la Dirección General de Recursos Físicos en Salud, Ministerio de Salud del Gobierno

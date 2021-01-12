@@ -83,7 +83,7 @@ textarea::placeholder {
   display: inline-block;
   font-size: 2rem;
 }
-.icon{
+.icon {
   font-size: 4rem;
 }
 @media (max-width: 1070px) {
@@ -133,12 +133,12 @@ textarea::placeholder {
     font-size: 3.5rem;
   }
   input {
-    height: 40px;
+    height: 36px;
     font-size: 1.5rem;
   }
   .text-tarea {
     font-size: 1.5rem;
-    height: 200px;
+    height: 220px;
   }
   .formulario-style {
     height: 518px;
@@ -157,6 +157,23 @@ textarea::placeholder {
     line-height: 26px;
   }
 }
+@media (max-width: 575px) {
+  input {
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  .text-tarea {
+    font-size: 1.5rem;
+    height: 170px;
+  }
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+  .formulario-style {
+    height: 453px;
+  }
+}
+
 @media (max-width: 510px) {
   .contacto {
     letter-spacing: 34px;

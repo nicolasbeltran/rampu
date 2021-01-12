@@ -11,11 +11,20 @@
 img {
   max-width: 65%;
   display: block;
-
 }
 @media screen and (max-width: 650px) {
   img {
     max-width: 80%;
+  }
+}
+@media screen and (max-width: 380px) {
+  img {
+    max-width: 84%;
+  }
+}
+@media screen and (max-width: 340px) {
+  img {
+    max-width: 88%;
   }
 }
 .chat {

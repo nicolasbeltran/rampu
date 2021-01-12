@@ -208,9 +208,28 @@
   }
   .description2 {
     font-size: 1.1rem;
+    line-height: 17px;
   }
   .description {
     font-size: 1.1rem;
+  }
+  .modalidades {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 307px) {
+  .encabezado1 {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+  }
+  .encabezado2 {
+    font-size: 1.2rem;
+  }
+  .description2 {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 1rem;
   }
   .modalidades {
     font-size: 1.4rem;
