@@ -26,7 +26,7 @@ export class ContactoComponent implements OnInit {
     const emailRequest =  {
       name: `Nombre: ${formValues.name}. Email: ${formValues.email}. Teléfono: ${formValues.phone}. Localidad: ${formValues.localidad}`,
       email: formValues.email,
-      message: `Nombre: ${formValues.mensaje}`,
+      message: `Mensaje: ${formValues.mensaje}`,
       storeId: 2,
     };
 
@@ -43,7 +43,7 @@ export class ContactoComponent implements OnInit {
       res => {
         this.toastrService.success('Se envió el mensaje con éxito');
         this.spinner.hide();
-
+        this.form.reset();
       },
       error => {
         this.toastrService.success('Ocurrió un error al enviar el mensaje. Por favor intente nuevamente');
