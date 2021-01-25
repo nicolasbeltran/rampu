@@ -62,3 +62,51 @@ nav {
 .row {
   margin-right: 15px;
 }
+
+/* Mobile */
+.navbar-mobile{
+  height: 100px;
+}
+.menu-mobile{
+  padding: 5px 9px 3px 9px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 28px;
+  margin-right: 20px;
+  height: 34px;
+}
+
+.menu-mobile svg{
+  font-size: 20px !important;
+}
+
+.mobile-options {
+  text-align: center;
+}
+
+.mobile-options div{
+  margin-bottom: 10px;
+}
+
+.menu-trans-show {
+  animation-name: menu-trans-show;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.menu-trans-hide {
+  animation-name: menu-trans-hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes menu-trans-show {
+  from {height: 100px;}
+  to {height: 290px; }
+}
+
+@keyframes menu-trans-hide {
+  from {height: 290px; }
+  to {height: 100px;}
+}

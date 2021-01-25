@@ -8,6 +8,10 @@ import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scrol
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
+
+  showMenuMobile = false;
+  activateTrans = false;
+
   constructor(
     private router: Router,
     private scrollToService: ScrollToService
