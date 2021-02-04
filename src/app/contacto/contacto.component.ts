@@ -17,6 +17,7 @@ export class ContactoComponent implements OnInit {
     phone : new FormControl(''),
     localidad : new FormControl(''),
   })
+  counter: number;
   constructor(private httpClient: HttpClient, private toastrService: ToastrService, private spinner: NgxSpinnerService) {}
 
   ngOnInit(): void {}
@@ -37,8 +38,16 @@ export class ContactoComponent implements OnInit {
       'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJyb2xlIjoiQ09NIiwiaXNfcHJlbWl1bSI6ZmFsc2UsImRuaSI6IjEyMTExMTExMSIsIm5hbWUiOiJ0ZXN0eSIsInN1cm5hbWUiOiJ0ZXN0eSIsImVtYWlsIjoidGVzdHlAdGVzdHkuY29tIiwibW9iaWxlIjoiMTIxMjEyMTIiLCJnZW5kZXIiOiJGZW1lbmlubyIsImFkZHJlc3MiOiJ0ZXN0eXkiLCJwaWN0dXJlIjoiaHR0cHM6Ly9jYWxhbXVjaGl0YW9ubGluZS1kZXYtYXdzLXMzLWltYWdlcy5zMy5hbWF6b25hd3MuY29tL2ltZy91c2Vycy8yLnBuZyIsImp3dCI6IiJ9LCJpYXQiOjE1ODg1MjExMTB9.vn_Zq81s6IY-USP0eErSXBSO9F_Q4LARq9NS7JlCnHs'
     }
 
-    this.spinner.show();
+    this.triggerEmailService(apiUrl, emailRequest, headersSrv);
 
+  }
+
+  triggerEmailService(apiUrl, emailRequest, headersSrv){
+    if (this.counter == 5) {
+      this.toastrService.error('Ocurrió un error al enviar el mensaje. Por favor intente nuevamente');
+      return
+    };
+    this.spinner.show();
     this.httpClient.post(apiUrl, emailRequest, { headers: headersSrv }).subscribe(
       res => {
         this.toastrService.success('Se envió el mensaje con éxito');
@@ -46,10 +55,10 @@ export class ContactoComponent implements OnInit {
         this.form.reset();
       },
       error => {
-        this.toastrService.success('Ocurrió un error al enviar el mensaje. Por favor intente nuevamente');
+        this.counter = this.counter + 1;
         this.spinner.hide();
+        this.triggerEmailService(apiUrl, emailRequest, headersSrv);
       }
     );
-
   }
 }
