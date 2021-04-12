@@ -23,6 +23,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainSobreNosotrosComponent } from './sobre-nosotros/main-sobre-nosotros/main-sobre-nosotros.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +43,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     NuestroEquipoComponent,
     ContactarComponent,
     MainSobreNosotrosComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     BrowserAnimationsModule,
     AppRoutingModule,
     ScrollToModule.forRoot(),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
