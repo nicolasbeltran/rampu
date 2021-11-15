@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
+# Como subir a HG pages
+
+Subir cambios a master
+Correr comando npm run deploy
+Actualizar Custom domain con "ranpu.com.ar" en Pages (https://github.com/nicolasbeltran/rampu/settings/pages)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
