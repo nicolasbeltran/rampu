@@ -26,7 +26,7 @@ export class ContactoComponent implements OnInit {
   public sendEmail() {
     this.spinner.show();
 
-    const serviceId = 'service_o8j22b4';
+    const serviceId = 'service_9io6the';
     const templateId = 'template_zaj4nqf';
     const formValues = this.form.value;
     const userId = 'user_tZkZEpFMlsov34Soz5jED';
