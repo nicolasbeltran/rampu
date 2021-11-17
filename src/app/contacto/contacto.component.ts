@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
 import { NgxSpinnerService } from 'ngx-spinner';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   selector: 'contacto',
@@ -22,43 +23,24 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  sendEmail(): void{
-    const formValues = this.form.value;
-    const emailRequest =  {
-      name: `Nombre: ${formValues.name}. Email: ${formValues.email}. Teléfono: ${formValues.phone}. Localidad: ${formValues.localidad}`,
-      email: formValues.email,
-      message: `Mensaje: ${formValues.mensaje}`,
-      storeId: 2,
-    };
-
-    const apiUrl = 'https://us-central1-trenda-ecommerce.cloudfunctions.net/app/sendEmail';
-    const headersSrv = {
-      'Content-Type': 'application/json',
-      // tslint:disable-next-line: object-literal-key-quotes
-      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJyb2xlIjoiQ09NIiwiaXNfcHJlbWl1bSI6ZmFsc2UsImRuaSI6IjEyMTExMTExMSIsIm5hbWUiOiJ0ZXN0eSIsInN1cm5hbWUiOiJ0ZXN0eSIsImVtYWlsIjoidGVzdHlAdGVzdHkuY29tIiwibW9iaWxlIjoiMTIxMjEyMTIiLCJnZW5kZXIiOiJGZW1lbmlubyIsImFkZHJlc3MiOiJ0ZXN0eXkiLCJwaWN0dXJlIjoiaHR0cHM6Ly9jYWxhbXVjaGl0YW9ubGluZS1kZXYtYXdzLXMzLWltYWdlcy5zMy5hbWF6b25hd3MuY29tL2ltZy91c2Vycy8yLnBuZyIsImp3dCI6IiJ9LCJpYXQiOjE1ODg1MjExMTB9.vn_Zq81s6IY-USP0eErSXBSO9F_Q4LARq9NS7JlCnHs'
-    }
-
-    this.triggerEmailService(apiUrl, emailRequest, headersSrv);
-
-  }
-
-  triggerEmailService(apiUrl, emailRequest, headersSrv){
-    if (this.counter == 5) {
-      this.toastrService.error('Ocurrió un error al enviar el mensaje. Por favor intente nuevamente');
-      return
-    };
+  public sendEmail() {
     this.spinner.show();
-    this.httpClient.post(apiUrl, emailRequest, { headers: headersSrv }).subscribe(
-      res => {
+
+    const serviceId = 'service_o8j22b4';
+    const templateId = 'template_zaj4nqf';
+    const formValues = this.form.value;
+    const userId = 'user_tZkZEpFMlsov34Soz5jED';
+
+    emailjs.send(serviceId, templateId, formValues, userId)
+      .then((result: EmailJSResponseStatus) => {
         this.toastrService.success('Se envió el mensaje con éxito');
         this.spinner.hide();
-        this.form.reset();
-      },
-      error => {
-        this.counter = this.counter + 1;
+        console.log(result.text);
+      }, (error) => {
+        this.toastrService.error('Ocurrió un error al enviar el mensaje. Por favor intente nuevamente');
         this.spinner.hide();
-        this.triggerEmailService(apiUrl, emailRequest, headersSrv);
-      }
-    );
+        console.log(error.text);
+      });
   }
+
 }
