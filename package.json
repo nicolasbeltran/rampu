@@ -24,6 +24,7 @@
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "angular-cli-ghpages": "^0.6.2",
     "bootstrap": "^4.5.2",
+    "emailjs-com": "^3.2.0",
     "jquery": "3.5.1",
     "ngx-spinner": "^10.0.1",
     "ngx-toastr": "^13.1.0",
